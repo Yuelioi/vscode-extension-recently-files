@@ -187,7 +187,8 @@ export function activate(context: vscode.ExtensionContext) {
     if (!openedFiles.includes(document.uri.fsPath)) {
       openedFiles.push(document.uri.fsPath);
 
-      if (openedFiles.length >= 50) {
+      // TODO 基于工作区储存
+      if (openedFiles.length >= 500) {
         openedFiles.shift();
       }
       context.globalState.update("openedFiles", openedFiles);
@@ -251,11 +252,23 @@ export function activate(context: vscode.ExtensionContext) {
       return;
     }
 
-    // 去掉最后一个打开的文件
-    recentFiles.pop();
+    // 只保留30个
+    if (recentFiles.length > 30) {
+      recentFiles.length = 30;
+    }
 
-    // 按路径顺序 而不是打开顺序排序
-    recentFiles.sort((a, b) => a.localeCompare(b));
+    // 按文件名字母顺序 其次按照文件路径顺序
+    recentFiles.sort((a, b) => {
+      // 比较文件名
+      let basenameComparison = path.basename(a).localeCompare(path.basename(b));
+
+      // 如果文件名相同，则比较完整路径
+      if (basenameComparison === 0) {
+        return a.localeCompare(b);
+      }
+
+      return basenameComparison;
+    });
 
     showRecentFiles(recentFiles, folderPathWithSep, showDetail);
   });

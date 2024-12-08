@@ -34,10 +34,10 @@ You can configure the extension to add ignored file extensions, ignore specific 
 
 ![Settings](./media/intro/setting.png)
 
-## TODO (real need?)
+## TODO
 
-- [ ] Add an option: Sort by original order, based on when files were opened like vscode?
-- [ ] Add an option: Filter files based on file extensions ?
+- [ ] Add an option: Sort by original order, based on when files were opened like vscode
+- [ ] Add an option: Filter files based on file extensions
 
 ## Icons
 

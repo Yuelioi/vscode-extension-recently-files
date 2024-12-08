@@ -2,7 +2,7 @@
   "name": "recently-files",
   "displayName": "Recently Files",
   "description": "list recently files by file path",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "yuelili",
   "icon": "media/logo.png",
   "repository": {
