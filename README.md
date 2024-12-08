@@ -1,6 +1,6 @@
 # Recently Files Tree
 
-[English Intro](README.MD) | [中文介绍](README-ZH.md)
+[English Intro](README.md) | [中文介绍](README-ZH.md)
 
 VS Code's built-in recent files list is sorted based on the order in which files were opened. This extension, however, unfolds recent files based on directory structure, making it easier to locate files.
 

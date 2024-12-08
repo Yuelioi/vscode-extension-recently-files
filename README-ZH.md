@@ -1,6 +1,6 @@
 # recently-files-tree
 
-[English Intro](README.MD) | [中文介绍](README-ZH.md)
+[English Intro](README.md) | [中文介绍](README-ZH.md)
 
 vscode自带的最近文件 是以打开文件顺序排序, 本拓展是以目录结构顺序展开, 更容易寻找
 
@@ -22,7 +22,8 @@ vscode默认最近文件: 杂乱无章
 
 ![img](./media//intro/sort-1.png)
 
-显示 `datail`
+显示 `datail`:
+
 ![img](./media//intro/sort-2.png)
 
 ## 设置界面
