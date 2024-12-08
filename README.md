@@ -1,7 +1,44 @@
-# recently-files-tree
+# Recently Files Tree
 
-vscode自带的最近文件 是以打开文件顺序排序, 本拓展是以目录结构顺序展开, 更容易寻找
+[English Intro](README.MD) | [中文介绍](README-ZH.md)
 
-### 0.0
+VS Code's built-in recent files list is sorted based on the order in which files were opened. This extension, however, unfolds recent files based on directory structure, making it easier to locate files.
 
-初始化
+## Features
+
+- **Sorts files by path**: Organizes files according to their directory structure.
+- **Supports bookmarking**: Allows you to add files to a favorites list for quick access.
+- **Supports filtering**: Provides options to filter files based on specific criteria.
+
+## Comparison
+
+VS Code default recent files:
+
+- **Unorganized and chaotic**
+
+![Default](./media/intro/default.png)
+
+This extension sorts files based on their paths rather than the order they were opened, making it more intuitive and organized.
+
+### Conventional Mode
+
+![Conventional Mode](./media/intro/sort-1.png)
+
+### Display with `detail` mode
+
+![Display Detail](./media/intro/sort-2.png)
+
+## Settings Interface
+
+You can configure the extension to add ignored file extensions, ignore specific files, and increase the display size of the panel.
+
+![Settings](./media/intro/setting.png)
+
+## TODO (real need?)
+
+- [ ] Add an option: Sort by original order, based on when files were opened like vscode?
+- [ ] Add an option: Filter files based on file extensions ?
+
+## Icons
+
+copy from [Material Icon Theme - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) , you can see them in

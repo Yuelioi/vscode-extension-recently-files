@@ -1,7 +1,4 @@
 # Change Log
 
-recently-files-tree
-
-## [Unreleased]
-
-- Initial release
+- 0.0.1 filter supported
+- 0.0.2 star supported

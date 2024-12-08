@@ -1,0 +1,7 @@
+{
+  "recently-files.open": "最近開いたファイルを開く（ファイルパスの順序で）",
+  "recently-files-title": "最近使用したファイル",
+  "recently-files.showDetail": "クイック選択で`detail`を表示（`description`ではなく）",
+  "recently-files.ignoreFolders": "フォルダを無視",
+  "recently-files.ignoreExts": "ファイル拡張子を無視"
+}

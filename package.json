@@ -2,8 +2,9 @@
   "name": "recently-files",
   "displayName": "Recently Files",
   "description": "list recently files by file path",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "yuelili",
+  "icon": "media/logo.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/Yuelioi/vscode-extension-recently-files"
@@ -17,10 +18,36 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "configuration": {
+      "title": "%recently-files-title%",
+      "properties": {
+        "recently-files.showDetail": {
+          "type": "boolean",
+          "default": false,
+          "description": "%recently-files.showDetail%"
+        },
+        "recently-files.ignoreFolders": {
+          "type": "array",
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "description": "%recently-files.ignoreFolders%"
+        },
+        "recently-files.ignoreExts": {
+          "type": "array",
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "description": "%recently-files.ignoreExts%"
+        }
+      }
+    },
     "commands": [
       {
         "command": "recently-files.open",
-        "title": "Open recently files order by file path"
+        "title": "%recently-files.open%"
       }
     ]
   },
